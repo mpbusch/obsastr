@@ -12,6 +12,7 @@ Planet,Neptune,6.49E-04,2.34E+00,2.91E+01,4.92E+04,NASA,Distance is closest appr
 Planet,Pluto,2.29E-05,8.25E-02,3.85E+01,2.30E+03,NASA,Distance is closest approach to earth,
 Telescope,Hubble,1.39E-05,5.00E-02,,,STScI,plate scale,
 Star,Sirius A,1.65E-06,5.94E-03,,,Kervalla et al. 2003,,
+Galaxy,Andromeda,,9.00E+03,,,,,
 Galaxy,LMC,1.46E-02,5.25E+01,1.00E+10,1.30E+17,,,
 Galaxy,M101,3.67E-01,1.32E+03,1.00E+12,1.60E+18,CHANDRA,,
 Quasar,FBQS J0000-0202,3.23E-04,1.16E+00,1.90E+15,1.60E+18,FIRST,Redshift = 1.35,
