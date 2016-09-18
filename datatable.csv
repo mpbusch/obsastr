@@ -13,7 +13,7 @@ Planet,Pluto,2.29E-05,8.25E-02,3.85E+01,2.30E+03,NASA,Distance is closest approa
 Telescope,Hubble,1.39E-05,5.00E-02,,,STScI,plate scale,
 Star,Sirius A,1.65E-06,5.94E-03,,,Kervalla et al. 2003,,
 Galaxy,LMC,1.46E-02,5.25E+01,1.00E+10,1.30E+17,,,
-Galaxy,M101,6.13E-01,2.21E+03,1.00E+12,1.60E+18,CHANDRA,,
+Galaxy,M101,3.67E-01,1.32E+03,1.00E+12,1.60E+18,CHANDRA,,
 Quasar,FBQS J0000-0202,3.23E-04,1.16E+00,1.90E+15,1.60E+18,FIRST,Redshift = 1.35,
 Quasar,ULAS J1120+0641,4.38E-05,1.58E-01,1.40E+16,1.60E+18,NATURE,Redshift = 7.09,
 Star,Alpha Centauri A,2.31E-06,8.31E-03,,,Kervalla et al. 2003,,
