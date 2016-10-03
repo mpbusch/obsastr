@@ -1,5 +1,4 @@
-  lambda    albedo   <cos>  C_ext/H    K_abs   <cos^2>
- (micron)                   (cm^2/H)  (cm^2/g)          comment
+lambda      albedo   <cos>  C_ext/H    K_abs   <cos^2> comment
 ----------- ------  ------ --------- --------- ------- --------
 1.00000E+04 0.0000  0.0000 1.225E-28 6.553E-03 0.66939
 9.77237E+03 0.0000  0.0000 1.274E-28 6.815E-03 0.66939

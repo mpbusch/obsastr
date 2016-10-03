@@ -2,8 +2,8 @@
 \ Extinction for Mauna Kea, 1.6mm precipitable H20
 \ Range 3000 to 20000, Delta 2.0 Npt =  8501
 \
-\ lam(A)   E1.0(mag) E1.2(mag) E1.4(mag) E1.6(mag) E1.8(mag) E2.0(mag)
-\
+  lam(A)   E1.0(mag) E1.2(mag) E1.4(mag) E1.6(mag) E1.8(mag) E2.0(mag)
+ 
   3000.0     3.000     3.600     4.200     4.800     5.400     6.000
   3002.0     2.966     3.559     4.152     4.745     5.339     5.932
   3004.0     2.932     3.518     4.104     4.691     5.277     5.864
