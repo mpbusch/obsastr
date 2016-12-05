@@ -100,8 +100,8 @@ def makeSpectrum(dataFile,stdDataFile,
     if not spectrumFile:
         spectrumFile = dataFile[:-5]+"_CALSPEC.fits"
     wavelengthCol = fits.Column(name='Wavelength', format='D', array=wfinal)
-    fluxCol = fits.Column(name='Flux', format='D', array=wfinal)
-    errorCol = fits.Column(name='Flux Error', format='D', array=wfinal)
+    fluxCol = fits.Column(name='Flux', format='D', array=ffinal)
+    errorCol = fits.Column(name='Flux Error', format='D', array=efinal)
 
     cols = fits.ColDefs([wavelengthCol,fluxCol,errorCol])
     
@@ -138,4 +138,26 @@ def makingTraceFile(dataFile,flatFile,fmaskFile,nsteps=7,traceFile=None):
     return traceFile
 
     
+# NOTE: don't call this from jupyter notebook, need interactive functionality
+# band should be r or b (red or blue)
+def makingFit(disDir,band,calFle):
 
+    # making a list of the flat fields
+    with open (band+'flat.lis','w') as FLATFLE:
+        FLATFLE.write('\n'.join(glob.glob(disDir + "*flat.0*"+band+".fits")))
+
+
+    bias = np.zeros((1028, 2048)) # apparently we didn't take any bias frames??? wtf????
+
+    flat, fmask_out = pydis.flatcombine(band+'flat.lis', bias, trim=True, mode='spline', 
+                                        response=True, display=True, output=band+'_FLAT.fits')
+
+    calFle = disDir + calFle
+
+    wfit = pydis.HeNeAr_fit(calFle, trim=True, fmask=fmask_out,
+                            interac=True, mode='poly', fit_order=5)
+
+    np.savetxt(band+"_WFIT.txt",wfit)
+    np.savetxt(band+"_FMASK.txt",fmask_out)
+
+    return band+'_FLAT.fits',band+"_FMASK.txt",band+"_WFIT.txt"
